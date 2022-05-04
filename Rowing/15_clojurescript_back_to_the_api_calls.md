@@ -25,6 +25,9 @@ https://stackoverflow.com/questions/42874351/spring-boot-enabling-cors-by-applic
 
 -
 
+Following the lambda island tutorials made me realize that the approach of swapping out the active page is not making use of React/Reagent particularly well.
 
+Instead I'll just make one parent component which decides how to make everything else. This feels like it'll be more react/immutable data appropriate.
 
+https://lambdaisland.com/episodes/reagent
 
