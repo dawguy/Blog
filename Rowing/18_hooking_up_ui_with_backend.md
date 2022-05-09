@@ -45,3 +45,21 @@ I think this is what allowed it to start working.  In addition to correctly dere
 ---
 
 For right now I think I'm okay with combining the loading + saving + swapping pages functionalities into one big function.
+
+---
+
+Ended up that I liked separating out the pieces. Now I save and load each separate db entity directly from app-db. With some helper functions added to handle nested elements such as splits or waterWorkoutAthleteSplit
+
+---
+
+Another very important thing is that when referring to javascript properies. The -{property} must awlays be used.
+
+https://lwhorton.github.io/2018/10/20/clojurescript-interop-with-javascript.html
+
+This is important to remember as (.. js/window -location -href) works, but (.. js/window location href) does not.
+
+This is because - looks at properties while leaving it off attempts to call as if its a function.
+
+---
+
+Overall I found getting everything hooked up not too bad seeing that all the componenets and router matching parts were already done. All it took was a little putting the pieces together.
