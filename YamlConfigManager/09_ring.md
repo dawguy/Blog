@@ -70,3 +70,13 @@ Full working snippet below. The middleware has some leeway in how it wants to be
 ```
 
 Returns :b 2.
+
+---
+
+Something to note about trying to do wrappers is that if you redefine the function, but don't refresh places where the function is stored. The updated function won't get the updates.
+
+```clojure
+  (def wrappers [wrapper-handle-multiple wrapper-remove-f])
+```
+
+Here when redefining wrapper-handle-multiple, without re defing wrappers the future runs still refered to the old version of the function.
