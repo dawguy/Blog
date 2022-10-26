@@ -1,0 +1,60 @@
+# Getting Started With Angular
+
+Why angular? Mostly because I want to continue the development of yaml-config-manager and need to develop a front-end. The initial inspiration was something like htop but for configs. With clojurescript being the language of choice. However at work I changed teams during my promotion and now am responsible for maintaining + developing an angular app.
+
+To this end I'll be swapping from Reagent + ClojureScript over to Typescript + Angular. Overall angular seems really nice with its templates, components, services, and dependency injection.
+
+## Getting started
+
+Following these tutorials
+
+Online: https://angular.io/tutorial/toh-pt0
+
+Offline (during flight): https://devdocs.io/angular/tutorial/toh-pt1
+
+I'll be using IntelliJ as my editor as that's what I've been using everywhere else when doing development.
+
+## Exploring ng generate * *
+
+ng generate component xyz
+
+Create
+Folder xyz. 
+Files xyz.component.html, xyz.component.scss, xyz.copmonent.spec.ts, and xyz.component.ts
+Edits app.module.ts to include a reference to the new component XYZ
+
+-
+
+ng generate service counter
+
+Does *NOT* generate a new folder.
+Create 
+counter.service.spec.ts
+counter.service.ts
+
+-
+
+Not going to run these all now that I think about it.
+
+```text
+Commands:
+  ng generate <schematic>              Run the provided schematic.                                                                                                                                                             [default]
+  ng generate app-shell                Generates an application shell for running a server-side version of an app.
+  ng generate application [name]       Generates a new basic application definition in the "projects" subfolder of the workspace.                                                                                         [aliases: app]
+  ng generate class [name]             Creates a new, generic class definition in the given or default project.                                                                                                            [aliases: cl]
+  ng generate component [name]         Creates a new, generic component definition in the given or default project.                                                                                                         [aliases: c]
+  ng generate directive [name]         Creates a new, generic directive definition in the given or default project.                                                                                                         [aliases: d]
+  ng generate enum [name]              Generates a new, generic enum definition for the given or default project.                                                                                                           [aliases: e]
+  ng generate guard [name]             Generates a new, generic route guard definition in the given or default project.                                                                                                     [aliases: g]
+  ng generate interceptor [name]       Creates a new, generic interceptor definition in the given or default project.
+  ng generate interface [name] [type]  Creates a new, generic interface definition in the given or default project.                                                                                                         [aliases: i]
+  ng generate library [name]           Creates a new, generic library project in the current workspace.                                                                                                                   [aliases: lib]
+  ng generate module [name]            Creates a new, generic NgModule definition in the given or default project.                                                                                                          [aliases: m]
+  ng generate pipe [name]              Creates a new, generic pipe definition in the given or default project.                                                                                                              [aliases: p]
+  ng generate resolver [name]          Generates a new, generic resolver definition in the given or default project.                                                                                                        [aliases: r]
+  ng generate service [name]           Creates a new, generic service definition in the given or default project.                                                                                                           [aliases: s]
+  ng generate service-worker           Pass this schematic to the "run" command to create a service worker
+  ng generate web-worker [name]        Creates a new, generic web worker definition in the given or default project.
+```
+
+Angular heroes tutorial is fantastic! Realy well done and I feel like I now understand pretty much all that will be required to make an app.
