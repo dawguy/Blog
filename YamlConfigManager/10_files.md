@@ -11,3 +11,7 @@ Most likely answer is that for is lazy, and I'm not realizing the values. It app
 ```
 
 This worked.
+
+https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/doseq
+
+Doseq seems like it would be an even more correct version of this.
