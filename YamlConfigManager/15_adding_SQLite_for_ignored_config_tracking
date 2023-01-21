@@ -1,0 +1,5 @@
+# Adding SQLite Support
+
+Goal for next bit of this project is to add support for ignored config lists. These will be saved across sessions and used to make managing configs easier for example environment specific email lists can be managed as code and ignored during migrates.
+
+The fun challenges here will be to integrate SQLite into the application and update every function to interact with it.
