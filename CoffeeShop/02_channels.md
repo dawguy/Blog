@@ -107,3 +107,20 @@ This works as you'd expect.
           coffees)
         (recur (conj coffees v))))))
 ```
+
+---
+
+## :default and :priority
+
+Default seems quite useful. Seems like a way to take an alt! and return immediately if blocked.
+
+http://bytopia.org/2016/09/14/implementing-leaky-channels/
+
+```clj
+(a/alt! c ([v] (if v
+            (recur (dec i)) ; Value dropped, go drop another.
+            true ; nil returned instantly = channel closed
+            ))
+   :default false ; take blocked = channel empty, continue.
+   :priority true)
+```
