@@ -1,0 +1,18 @@
+curl 'https://www.instacart.com/graphql?operationName=CartItemCount&variables=%7B%22id%22%3A%2272385644%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%222a89f7495cfb8c1ffcb61158b561ee503fed5d0ad40e076720763c2eb806b8f6%22%7D%7D' \
+  -H 'authority: www.instacart.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'cookie: device_uuid=688249a7-4215-4a3e-b15c-02efa0fbe942; ahoy_visitor=EB969E9F-db4e-44f9-bc3c-4976cbc24b41; G_ENABLED_IDPS=google; ahoy_visit=8B412A7E-fd08-4867-a18a-4b842ba9689c; ahoy_track=true; __cf_bm=VZlElv152C9H99evsweOYoGA3hpBmisI8PVV3swUZ1U-1682902233-0-Afhv8ZVGOsKUURSTAdXoKEXrkLVisb4EUBAU2CmCiNCYo/qZODhR+2s1+AVW86wSSPZKX9KCOh93QImhUsTMjps=; _cfuvid=fvIFZpV0qNM0v3z5xY22_rL7XwZjEvKRydHWJrbTKOk-1682902233503-0-604800000; ftr_blst_1h=1682902234546; __stripe_mid=2b9bd6a9-b200-4111-a3ba-3dc20573e50da49bbd; __stripe_sid=a2cbbafc-fa40-4778-97d9-8d177927913056eef8; build_sha=ad5d0b908122f4cddc2812b280afe9db15d7868a; g_state={"i_l":0}; __Host-instacart_sid=v2.29abf57.B_IQie0BwMmYeJ7b-3mNaEUeDB4FDTMZQ3lanteLmbM; known_visitor=%7Chockeyguy411%40gmail.com%7Cgoogle_sso; forterToken=3fb291e189bc450082710530796415db_1682902255516_12_dUAL43-mnts-a9-d4_17ck; ajs_user_id=43695959; ajs_anonymous_id=2f92c1df-3937-4b12-b018-7c68b4b5ae32; _instacart_logged_in=1; ab.storage.userId.6f8d91cb-99e4-4ad7-ae83-652c2a2c845d=%7B%22g%22%3A%2243695959%22%2C%22c%22%3A1682902264671%2C%22l%22%3A1682902264671%7D; ab.storage.deviceId.6f8d91cb-99e4-4ad7-ae83-652c2a2c845d=%7B%22g%22%3A%22cd505183-1f75-ae18-c24a-722052d3c91f%22%2C%22c%22%3A1682902264672%2C%22l%22%3A1682902264672%7D; ab.storage.sessionId.6f8d91cb-99e4-4ad7-ae83-652c2a2c845d=%7B%22g%22%3A%2207b5f8a3-461e-c93b-d2b6-5326de4b4295%22%2C%22e%22%3A1682904064674%2C%22c%22%3A1682902264672%2C%22l%22%3A1682902264674%7D; _instacart_session_id=NERoK204SkRqOFAxSk5wUlQ5eFlXWk5ueVZQdjFVNW5GTGUzSVhNelVuN2ZZZi9NSmxHQ01GYXNCM1FkWVdYbDVuVWwxVm83M3QvdExLU0xKS1NnOGlBWmJrM0lYVENnRkZsd3RjV25jaFJ0dko3N1dwUFI2MkswSURBb3dVT3BKeFZZWWxtaFZTU0kvd01TZWdJa2crZ2lOd0JQZUZIcmdLTHlIUm5RN2NPR0R6VEd3TVlTRUY2bFo1SGJDelduR1lBdEFqcEErVGhoTWxSbFVjZkUyK3hMcDl5QjdiemFaY2ppTTJvNTVITkRjTkNmQWtlZlJIUlJuSTNYQUMvYi0tTlpwdG5Bc2w3em5mMFQyeUF5NTQrUT09--c43cfeee46d26117bccdef992a06dccc4dad58ee; _dd_s=logs=0&expire=1682903201113' \
+  -H 'pragma: no-cache' \
+  -H 'referer: https://www.instacart.com/store/publix/storefront' \
+  -H 'sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36' \
+  -H 'x-client-identifier: web' \
+  --compressed
