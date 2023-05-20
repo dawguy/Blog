@@ -33,3 +33,17 @@ https://docs.oracle.com/javase/tutorial/2d/images/saveimage.html
 
 Didn't see a :file in Malli. Will either need to write a custom generator or just put images off till later, for now I'm choosing later. But will likely do this soonish.
 
+```clj
+(let [tar-path (str "/tmp/grocery/" (:name i) ".jpg")]
+  (with-open [tar-f (clojure.java.io/output-stream tar-path)]
+    (with-open [from-f (clojure.java.io/input-stream (:file i))]
+      (clojure.java.io/copy from-f tar-f))))))
+```
+
+# New Learnings
+
+I enjoy the split of Polylith style breaking out of components with `spec`, `interface`, and `core`. Overall feels like a pretty easy to reason about method of seperating out the code.
+
+One thing that I'm pretty uncertain about is when does it make sense to incorporate testing into the app. Like on one hand the REPL let me manually test most of the save functions. And for DB interfaces, it doesn't seem like putting tests in early would save time if I need to refactor soon after (and would require postgres to be running).
+
+This syntax is fire though: `(mg/generate spec/create-product)`
