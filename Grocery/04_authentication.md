@@ -116,3 +116,7 @@ Buddy makes it super simple.
 (hashers/check "password" "bcrypt+sha512$18b64e558fe9c8450f17b546dcc39d9c$12$1046fef9194c6443f53f997393b1b8640aaff8c685f6d54d")
 ; False
 ```
+
+# More
+
+https://www.loginradius.com/blog/engineering/guest-post/jwt-vs-sessions/

@@ -74,3 +74,12 @@ A better way to serve files from conflicting paths, e.g. "/*", is to serve them 
 Swagger generation from :parameters and :responses.
 https://cljdoc.org/d/metosin/reitit/0.7.0-alpha4/doc/ring/swagger-support
 
+
+# For other future David
+
+Interceptor pattern instead of middleware.
+https://quanttype.net/posts/2018-08-03-why-interceptors.html
+
+:enter and :leave which both interact on contexts.
+
+Makes handling async and sync more straightforward.
